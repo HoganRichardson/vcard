@@ -15,7 +15,7 @@ def convert(csv_filename):
 
             vc_begin = "BEGIN:VCARD\n"
             vc_version = "VERSION:3.0\n"
-            vc_name = f"N:;{surname};{firstname};;\n"
+            vc_name = f"N:{surname};{firstname};;;\n"
             vc_fn= f"FN:{firstname} {surname}\n"
             vc_phone = f"TEL;TYPE=CELL,TYPE=pref;TYPE=VOICE:{mobile}\n"
             vc_end = "END:VCARD\n"
